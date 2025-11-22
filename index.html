@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐶 妙麗歲數計算機</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🐶 妙麗歲數計算機</h1>
+      <div class="input-group">
+        <label for="birthdate">狗狗的出生日期：</label>
+        <input type="date" id="birthdate" max="" />
+      </div>
+      <button onclick="calculateAge()">開始計算</button>
+      <div class="result" id="result">
+        <p>
+          妙麗現在大約 <span class="highlight" id="dogAge"></span> 歲狗年齡，
+        </p>
+        <p>
+          換算成人類年齡大約是
+          <span class="highlight" id="humanAge"></span> 歲。
+        </p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
